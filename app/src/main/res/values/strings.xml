@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">McApp</string>
+    <string name="app_name">MCD Vooraadbeheer App</string>
+    <string name="app_welcome">Welkom in de Mc Donalds Vooraadbeheer Applicatie</string>
+    <string name="app_fillname">Vul naam in</string>
+    <string name="app_fillstore">Vul je store nr. in</string>
+    <string name="app_selecttype">Kies tussen dag/week/maand telling</string>
+    <string name="app_startbutton">Ga verder</string>
+
+    <string-array name="spinnerItems">
+        <item>Dagtelling</item>
+        <item>Weektelling</item>
+        <item>Maandtelling</item>
+    </string-array>
+
 </resources>

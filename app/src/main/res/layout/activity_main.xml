@@ -11,7 +11,80 @@
     tools:context="com.raoulcornelissen.mcd.mcapp.MainActivity">
 
     <TextView
+        android:text="@string/app_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/app_fillname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:hint="Naam" />
+
+    <TextView
+        android:text="@string/app_fillstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText3"
+        android:layout_alignParentEnd="true"
+        android:hint="Store Nummer (xxxx)" />
+
+    <TextView
+        android:text="@string/app_selecttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/spinner"
+        android:entries="@array/spinnerItems"/>
+
+    <Button
+        android:text="@string/app_startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:onClick="StartActivityCount" />
 </RelativeLayout>
